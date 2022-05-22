@@ -2,6 +2,7 @@
 <html>
 <head>
      <?php $version = 1 ?> 
+     <style src='style.css'></style>
      <title>DevSearch</title>
 </head>
 <body>
