@@ -2,7 +2,7 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "default"
+                "authProtocol": "xprotocol"
             },
             "previewLimit": 50,
             "server": "localhost",
