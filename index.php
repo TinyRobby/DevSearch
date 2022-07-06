@@ -1,4 +1,9 @@
-<?php require 'db-connect.php'?>
+<?php 
+    require 'db-connect.php';
+    //Just
+    //A
+    //Spacer
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +12,7 @@
      <title>DevSearch</title>
 </head>
 <body>
-    <h1>DevSearch is on version <?php echo $version ?></h1>
+    <h1>DevSearch is on version <?php echo $version; ?></h1>
     <a href="search.php">Search</a>
 </body>
 </html>
