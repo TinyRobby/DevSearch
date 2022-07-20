@@ -24,7 +24,7 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 <h3>Results:</h3>
 <hr></hr>
 <?php
-$sql = "SELECT * FROM searces WHERE frontname='" . $_GET['sb']."'";
+$sql = "SELECT * FROM searces WHERE frontname LIKE '%" . $_GET['sb']."%'";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
@@ -49,7 +49,7 @@ if($result = mysqli_query($link, $sql)){
        // Free result set
       mysqli_free_result($result);
     } else{
-        echo "No records matching your query were found, or there was an error\nerror:". mysqli_error($link);
+        echo "<p>No records matching your query were found, or there was an error\nerror: ". mysqli_error($link). "</p>";
     }
 ?>
 <a href="<?php $url ?>"><?php $name?></a>
