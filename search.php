@@ -20,7 +20,7 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 </head>
 <body>
 <h1>Search</h1>
-<input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input> <a href="advanced-search.php" >
+<input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input> <a href="advanced-search.php">Advaced Search</a>
 <h3>Results:</h3>
 <hr></hr>
 <?php

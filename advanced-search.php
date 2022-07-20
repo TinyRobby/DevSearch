@@ -7,19 +7,18 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Advanced Search</title>
     <script type="text/javascript">
     baseURL=document.URL;
     function search() {
         let search_bar = document.getElementById("searchbar").value;
         console.log(search_bar);
-        const URL = baseURL.split('?');
         window.location.replace(`${URL[0]}?sb=${search_bar}`);
     }
 </script>
 </head>
 <body>
-<h1>Search</h1>
+<h1>Advanced Search</h1>
 <input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input>
 <h3>Results:</h3>
 <hr></hr>
