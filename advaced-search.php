@@ -20,11 +20,11 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 </head>
 <body>
 <h1>Search</h1>
-<input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input> <a href="advanced-search.php" >
+<input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input>
 <h3>Results:</h3>
 <hr></hr>
 <?php
-$sql = "SELECT * FROM searces WHERE frontname LIKE '%" . $_GET['sb']."%'";
+$sql = "SELECT * FROM searces WHERE frontname OR id OR backname LIKE '%" . $_GET['sb']."%'";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
