@@ -13,7 +13,8 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
     function search() {
         let search_bar = document.getElementById("searchbar").value;
         console.log(search_bar);
-        window.location.replace(`${URL[0]}?sb=${search_bar}`);
+        const URL = baseURL.split('?');
+        window.location.replace(`${URL[0]}?sb=${search_bar}&id`);
     }
 </script>
 </head>

@@ -8,6 +8,7 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
+    <style>body {font-family: Arial, sans-serif; color: lightslategray; background-color: lightskyblue;} .uno {background-color: limegreen; border: 10px outset limegreen; color: slategray;} .dos {background-color: coral; border: 10px outset coral;}</style>
     <script type="text/javascript">
     baseURL=document.URL;
     function search() {
@@ -17,10 +18,15 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
         window.location.replace(`${URL[0]}?sb=${search_bar}`);
     }
 </script>
+<style src="/style.css"></style>
 </head>
 <body>
+<div class=uno>
 <h1>Search</h1>
 <input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input> <a href="advanced-search.php">Advaced Search</a>
+</div>
+<pre class="tab">                                                                                                                                                                                                                                                                                                                                                                                                                           </pre>
+<div class=dos>
 <h3>Results:</h3>
 <hr></hr>
 <?php
@@ -53,5 +59,6 @@ if($result = mysqli_query($link, $sql)){
     }
 ?>
 <a href="<?php $url ?>"><?php $name?></a>
+</div>
 </body>
 </html>
