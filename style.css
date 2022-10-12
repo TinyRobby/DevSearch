@@ -1,3 +1,15 @@
 body {
-    color: limegreen;
-}
+    font-family: Arial, sans-serif; 
+    color: lightslategray; 
+    background-color: lightskyblue;
+} 
+    
+.uno {
+        background-color: limegreen; 
+        border: 10px outset green; 
+        color: slategray;
+} 
+    
+.dos {
+        background-color: coral; 
+        border: 10px outset orange;}

@@ -4,6 +4,7 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 ?>
 <html lang="en">
 <head>
+    <style src=style.css></style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +20,12 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 </script>
 </head>
 <body>
+    <div class=uno>
 <h1>Advanced Search</h1>
 <input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input>
+    </div>
+<pre type=tab>
+    <div class=dos>
 <h3>Results:</h3>
 <hr></hr>
 <?php
@@ -53,5 +58,6 @@ if($result = mysqli_query($link, $sql)){
     }
 ?>
 <a href="<?php $url ?>"><?php $name?></a>
+</div>    
 </body>
 </html>

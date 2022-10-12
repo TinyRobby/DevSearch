@@ -8,7 +8,7 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
-    <style>body {font-family: Arial, sans-serif; color: lightslategray; background-color: lightskyblue;} .uno {background-color: limegreen; border: 10px outset limegreen; color: slategray;} .dos {background-color: coral; border: 10px outset coral;}</style>
+    <style src="style.css"></style>
     <script type="text/javascript">
     baseURL=document.URL;
     function search() {
