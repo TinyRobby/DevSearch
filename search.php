@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php 
-require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
+require "db-connect.php";
 ?>
 <html lang="en">
 <head>
@@ -21,6 +21,25 @@ require "C:\Users\Robby Davis\Documents\DevSearch\db-connect.php";
 <style src="/style.css"></style>
 </head>
 <body>
+<style>
+body {
+    font-family: Arial, sans-serif; 
+    color: lightslategray; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Images/images.jpg");
+} 
+    
+.uno {
+        background-color: limegreen; 
+        border: 10px outset green; 
+        color: slategray;
+} 
+    
+.dos {
+        background-color: coral; 
+        border: 10px outset orange;}
+        </style>
 <div class=uno>
 <h1>Search</h1>
 <input type="text" id="searchbar" name="sb"></input><input type="button" value="Search" id="searchbutton" onclick="search()"></input> <a href="advanced-search.php">Advaced Search</a>
